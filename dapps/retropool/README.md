@@ -1,6 +1,6 @@
 # RetroActive Public Goods Pooling
 
-<div style="display:flex; justify-content:space-between" >
+<div style="display:flex; justify-content:space-around" >
     <img src="./src/assets/candide-logo-watermark-lighter.svg" alt="candide" width="270"/>
     <img src="./src/assets/optimism-logo.svg" alt="optimism" width="270"/>
     <img src="./src/assets/pooltogether-logo--purple-gradient.svg" alt="pooltogether" width="180"/>
