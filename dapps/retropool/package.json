@@ -1,15 +1,15 @@
 {
-  "name": "walletconnect-example-dapp",
+  "name": "retroactive-public-goods-pooling",
   "version": "1.7.8",
   "private": true,
   "keywords": [
-    "walletconnect",
-    "ethereum",
-    "web3",
-    "crypto"
+    "Retroactive Public Goods Funding",
+    "Optinmism",
+    "PoolTogether",
+    "CANDIDE Wallet"
   ],
   "homepage": ".",
-  "author": "WalletConnect, Inc. <walletconnect.com>",
+  "author": "CANDIDE Wallet Team",
   "license": "MIT",
   "scripts": {
     "start": "react-scripts-ts start",

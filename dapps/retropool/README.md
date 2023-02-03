@@ -1,6 +1,14 @@
 # RetroActive Public Goods Pooling
 
-This project is a tool that allows users to deposit and delegate their chances of winning to Optimism RetroPGF round 2 in one click gasless no loss donation; helping fund public goods that support the development and usage of the OP Stack
+<div style="display:flex; justify-content:space-between" >
+    <img src="./src/assets/candide-logo-watermark-lighter.svg" alt="candide" width="270"/>
+    <img src="./src/assets/optimism-logo.svg" alt="optimism" width="270"/>
+    <img src="./src/assets/pooltogether-logo--purple-gradient.svg" alt="pooltogether" width="180"/>
+</div>
+
+<br/>
+
+This project is a tool that allows users to deposit and delegate their chances of winning to Optimism [RetroPGF](https://community.optimism.io/docs/governance/retropgf-2/) round 2 in one click gasless no loss donation; helping fund public goods that support the development and usage of the OP Stack
 
 ## Motivation
 
@@ -21,27 +29,32 @@ Function Calls
 
 The tool’s frontend communicates JSON-RPC method for sending multiple function calls from the user’s wallet. The tool offers a one-click experience for multi-step interactions of bundled calls that approve USDC, deposit to the pool and delegate the tickets to RetroPGF.eth. The standard for communication used is EIP-5792. The following function calls are communicated:
 
-- approve X USDC erc-20 contract
+- `approve` X USDC erc-20 contract
 
-- deposit X USDC token to StakePrizePool contract
+- `deposit` X USDC token to StakePrizePool contract
 
-- approve X TICK erc-20 contract
+- `approve` X TICK erc-20 contract
 
-- stake with delegator address and X Tickets in TWABDelegator contract
+- `stake` with delegator address and X Tickets in TWABDelegator contract
 
-- createDelegation with delegator address, slot and delegatee and lock duration in TWABDelegator contract
+- `createDelegation` with delegator address, slot and delegatee and lock duration in TWABDelegator contract
 
-- fundDelegation with the delegator address, slot, and amount of tickets in TWABDelegator contract
+- `fundDelegation` with the delegator address, slot, and amount of tickets in TWABDelegator contract
 
 ## Wallet compatibility
 
-Smart contract wallets that support EIP-5792. EOA wallets like Metamask cannot execute bundled function calls.
+Smart contract wallets that support [EIP-5792](https://eips.ethereum.org/EIPS/eip-5792). EOA wallets like Metamask cannot execute bundled function calls
+
+## Gas Sponsorship
+
+Pooltogether is sponsoring the first 1000 deposits in support of retroactive public goods funding, making deposits gasless for end-users thanks to CANDIDE's [Paymaster feature](https://docs.candidewallet.com/develop/wallet/gasless-transactions)
 
 ---
 
 ## Develop
 
 ```bash
+npm install
 npm run start
 ```
 
