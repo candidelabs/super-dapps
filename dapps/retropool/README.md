@@ -1,17 +1,17 @@
 # RetroActive Public Goods Pooling
 
-<div style="display:flex; justify-content:space-around" >
-    <img src="./src/assets/candide-logo-watermark-lighter.svg" alt="candide" width="270"/>
-    <img src="./src/assets/optimism-logo.svg" alt="optimism" width="270"/>
-    <img src="./src/assets/pooltogether-logo--purple-gradient.svg" alt="pooltogether" width="180"/>
+<div align="center" width="100%">
+    <img src="./src/assets/pooltogether-logo--purple-gradient.svg" alt="pooltogether" width="40%"/>
 </div>
-
 <br/>
 
 This project is a tool that allows users to deposit and delegate their chances of winning to Optimism [RetroPGF](https://community.optimism.io/docs/governance/retropgf-2/) round 2 in one click gasless no loss donation; helping fund public goods that support the development and usage of the OP Stack
 
 ## Motivation
-
+<div align="center">
+    <img src="./src/assets/optimism-logo.svg" alt="optimism" width="55%"/>
+</div>
+<br/>
 RetroPGF is Optimism mechanism for funding open-source software. The Optimism Collective’s second round of Retroactive Public Goods Funding (RetroPGF) takes place in Q1 2023.
 
 This tool aims to simplify the stage of a user journey of depositing and delegating to RetroPGF in PoolTogether. While the PoolTogether frontend is extremely well designed 3, it is constrained by EOA wallets’ limitations. A user wanting to deposit and delegate to RetroPGF with an EOA has a multi-step process involving several transaction executions and two different web pages.
@@ -42,6 +42,11 @@ The tool’s frontend communicates JSON-RPC method for sending multiple function
 - `fundDelegation` with the delegator address, slot, and amount of tickets in TWABDelegator contract
 
 ## Wallet compatibility
+
+<div align="center">
+    <img src="./src/assets/candide-logo-watermark-lighter.svg" alt="candide" width="60%"/>
+</div>
+<br/>
 
 Smart contract wallets that support [EIP-5792](https://eips.ethereum.org/EIPS/eip-5792). EOA wallets like Metamask cannot execute bundled function calls
 
