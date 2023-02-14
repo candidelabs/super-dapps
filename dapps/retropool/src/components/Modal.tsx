@@ -91,6 +91,7 @@ const SCard = styled.div`
   position: relative;
   width: 100%;
   max-width: 500px;
+  background: linear-gradient(45deg, rgba(95,56,194,0.75) 0%, rgba(248,236,225,1) 50%, rgba(255,4,32,0.8477591720281863) 100%);
   padding: 25px;
   background-color: rgb(${colors.white});
   border-radius: 6px;

@@ -55,7 +55,7 @@ const SButtonContainer = styled(Column as any)`
 
 const SContainer = styled.div`
   height: 100%;
-  min-height: 200px;
+  min-height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,6 +67,7 @@ const SModalContainer = styled.div`
   width: 100%;
   position: relative;
   word-wrap: break-word;
+  text-align: left;
 `;
 
 const SModalTitle = styled.div`
@@ -76,7 +77,8 @@ const SModalTitle = styled.div`
 `;
 
 const SModalParagraph = styled.p`
-  margin-top: 30px;
+  margin: 10px 0 20px 0;
+  font-size= 10px;
 `;
 
 // @ts-ignore
@@ -97,12 +99,12 @@ const SRow = styled.div`
 `;
 
 const SKey = styled.div`
-  width: 30%;
+  width: 100%;
   font-weight: 700;
 `;
 
 const SValue = styled.div`
-  width: 70%;
+  width: 100%;
   font-family: monospace;
 `;
 
@@ -129,6 +131,8 @@ interface IAppState {
   assets: number;
   depositAmount: number;
   isContractAddress: boolean;
+  showConfirmationModal: boolean;
+  delegationPeriodInDays: number;
 }
 
 const goerliEthereum = SUPPORTED_CHAINS[0];
@@ -148,6 +152,8 @@ const INITIAL_STATE: IAppState = {
   assets: 0,
   depositAmount: 0,
   isContractAddress: false,
+  showConfirmationModal: false,
+  delegationPeriodInDays: 0,
 };
 
 const goerliProvider = new ethers.providers.JsonRpcProvider(goerliEthereum.rpc_url);
@@ -182,6 +188,17 @@ class App extends React.Component<any, any> {
     this.setState({
       depositAmount: event.target.value,
     });
+  }
+
+  public handleChangeDelegationPeriod = (event: any) => {
+    this.setState({
+      delegationPeriodInDays: event.target.value,
+    });
+  }
+
+  public handleConfirmModal = () => {
+    this.toggleModal();
+    this.setState({ showConfirmationModal: true });
   }
 
   public connect = async () => {
@@ -371,7 +388,7 @@ class App extends React.Component<any, any> {
       return (
         <button
           className="button-56"
-          onClick={this.sendBundleTransaction}
+          onClick={this.handleConfirmModal}
           disabled={depositAmount <= 0 || !isSmartContract}>
           Deposit & Delegate
         </button>
@@ -380,7 +397,7 @@ class App extends React.Component<any, any> {
   }
 
   public sendBundleTransaction = async () => {
-    const { connector, address, chainId, depositAmount } = this.state;
+    const { connector, address, chainId, depositAmount, delegationPeriodInDays } = this.state;
 
     if (!connector) {
       return;
@@ -388,11 +405,11 @@ class App extends React.Component<any, any> {
     const amountToDepositAndDelegate = depositAmount * 1000000;
 
     try {
-      // open modal
-      this.toggleModal();
-
-      // toggle pending request indicator
-      this.setState({ pendingRequest: true });
+      // toggle pending request indicator and close showConfirmation Modal
+      this.setState({
+        pendingRequest: true,
+        showConfirmationModal: false
+      });
 
       // get call data for each function
       const callDataApprove = await USDCContract.interface.encodeFunctionData(
@@ -414,8 +431,9 @@ class App extends React.Component<any, any> {
 
       // get next empty slot to delegate
       let slotIndex = 0;
+      const lockDuration = delegationPeriodInDays * 60 * 60 * 24;
       let isCreated = true;
-      while (!isCreated) {
+      while (isCreated) {
         const response = await TWABDelegatorContract.getDelegation(address, slotIndex);
 
         if (!response.wasCreated) {
@@ -426,7 +444,7 @@ class App extends React.Component<any, any> {
       }
 
       const callDataCreateDelegationTickets = await TWABDelegatorContract.interface.encodeFunctionData(
-        "createDelegation", [address, slotIndex, optiRetroPGFAddress, 0],
+        "createDelegation", [address, slotIndex, optiRetroPGFAddress, lockDuration],
       );
 
       const callDataFundDelegation = await TWABDelegatorContract.interface.encodeFunctionData(
@@ -510,6 +528,8 @@ class App extends React.Component<any, any> {
       pendingRequest,
       result,
       depositAmount,
+      showConfirmationModal,
+      delegationPeriodInDays,
     } = this.state;
 
     const ExplainerCard = () => {
@@ -518,7 +538,7 @@ class App extends React.Component<any, any> {
           <h4>How it works</h4>
           <p>
             Donate your chances of winning to support public goods, and keep your deposit. With every dollar you deposit, PoolTogether gives you a chance to win that resets every day.
-            By delegating your deposit, 100% of the prizes you win go directly to retroactive public goods funding.
+            By delegating your deposit and locking it for a duration of days, 100% of the prizes you win go directly to retroactive public goods funding.
           </p>
           <br />
           <p>
@@ -626,7 +646,7 @@ class App extends React.Component<any, any> {
                   <p>
                     Optimism RetroPGF.eth address: {' '}
                     <a
-                      href='https://optimistic.etherscan.io/address/0x15DdA60616Ffca20371ED1659dBB78E888f65556'
+                      href={`https://optimistic.etherscan.io/address/${optiRetroPGFAddress}`}
                       target='_blank'
                       rel='noreferrer noopener'
                     >
@@ -637,10 +657,25 @@ class App extends React.Component<any, any> {
                     <input
                       className="button-53"
                       placeholder="0.0"
+                      min="0"
+                      type="number"
                       value={depositAmount}
                       onChange={this.handleChange} />
                     <h2 style={{ margin: "15px" }}>
                       USDC
+                    </h2>
+                  </STestButtonContainer>
+                  👇🏾
+                  <STestButtonContainer >
+                    <input
+                      className="button-53"
+                      placeholder="0.0"
+                      min="0"
+                      type="number"
+                      value={delegationPeriodInDays}
+                      onChange={this.handleChangeDelegationPeriod} />
+                    <h2 style={{ margin: "15px" }}>
+                      Days
                     </h2>
                   </STestButtonContainer>
                   <STestButtonContainer>
@@ -653,7 +688,44 @@ class App extends React.Component<any, any> {
           </SContent>
         </Column>
         <Modal show={showModal} toggleModal={this.toggleModal}>
-          {pendingRequest ? (
+          {showConfirmationModal ? (
+            <SModalContainer>
+              <SModalTitle>{"Confirm your deposit & delegation"}</SModalTitle>
+              <STable>
+                <SRow>
+                  <SKey>Deposit Amount</SKey>
+                  <SValue>{depositAmount} USDC</SValue>
+                </SRow>
+                <SRow>
+                  <SKey>Delegation Period</SKey>
+                  <SValue>{delegationPeriodInDays} days</SValue>
+                </SRow>
+                <SRow>
+                  <SKey>Delegatee</SKey>
+                  <SValue>
+                    <a
+                      href={`https://optimistic.etherscan.io/address/${optiRetroPGFAddress}`}
+                      target='_blank'
+                      rel='noreferrer noopener'
+                    >
+                      0x15D..🔗
+                    </a>
+                  </SValue>
+                </SRow>
+              </STable>
+              <SModalParagraph>
+                Deposit a minimum of 200 USDC & lock your delegation for 14 days to get your gas sponsored by PoolTogether! 🏆🌊
+              </SModalParagraph>
+              <STestButtonContainer>
+                <button
+                  className="button-56"
+                  onClick={this.sendBundleTransaction}
+                  disabled={depositAmount <= 0 || !isSmartContract}>
+                  Confirm
+                </button>
+              </STestButtonContainer>
+            </SModalContainer>
+          ) : pendingRequest ? (
             <SModalContainer>
               <SModalTitle>{"Pending Call Request"}</SModalTitle>
               <SContainer>
@@ -674,7 +746,7 @@ class App extends React.Component<any, any> {
                         target='_blank'
                         rel='noreferrer noopener'
                       >
-                      {result[key].toString()}
+                        {result[key].toString()}
                       </a>
                     </SValue>
                   </SRow>
