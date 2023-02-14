@@ -29,17 +29,17 @@ Function Calls
 
 The tool’s frontend communicates JSON-RPC method for sending multiple function calls from the user’s wallet. The tool offers a one-click experience for multi-step interactions of bundled calls that approve USDC, deposit to the pool and delegate the tickets to RetroPGF.eth. The standard for communication used is EIP-5792. The following function calls are communicated:
 
-- `approve` X USDC erc-20 contract
+- `approve` X amount USDC ERC-20 contract
 
-- `deposit` X USDC token to StakePrizePool contract
+- `deposit` X amount USDC token to `StakePrizePool` contract
 
-- `approve` X TICK erc-20 contract
+- `approve` X amount TICK ERC-20 contract
 
-- `stake` with delegator address and X Tickets in TWABDelegator contract
+- `stake` with delegator address and X amount of TICK in `TWABDelegator` contract
 
-- `createDelegation` with delegator address, slot and delegatee and lock duration in TWABDelegator contract
+- `createDelegation` with delegator address, slot number, delegatee address and lock duration in `TWABDelegator` contract
 
-- `fundDelegation` with the delegator address, slot, and amount of tickets in TWABDelegator contract
+- `fundDelegation` with the delegator address, slot number, and amount of tickets in `TWABDelegator` contract
 
 ## Wallet compatibility
 
@@ -52,7 +52,7 @@ Smart contract wallets that support [EIP-5792](https://eips.ethereum.org/EIPS/ei
 
 ## Gas Sponsorship
 
-Pooltogether is sponsoring the first 1000 deposits in support of retroactive public goods funding, making deposits gasless for end-users thanks to CANDIDE's [Paymaster feature](https://docs.candidewallet.com/develop/wallet/gasless-transactions)
+Pooltogether is sponsoring the first 1000 deposits in support of retroactive public goods funding, making deposits gasless for end-users thanks to CANDIDE's [Paymaster feature](https://docs.candidewallet.com/develop/wallet/gas-sponsorship)
 
 ---
 
