@@ -1,4 +1,4 @@
-# RetroActive Public Goods Pooling
+# Retroactive Public Goods Pooling
 
 <div align="center" width="100%">
     <img src="./src/assets/pooltogether-logo--purple-gradient.svg" alt="pooltogether" width="40%"/>

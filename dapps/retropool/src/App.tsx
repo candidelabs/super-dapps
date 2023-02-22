@@ -665,7 +665,7 @@ class App extends React.Component<any, any> {
                       USDC
                     </h2>
                   </STestButtonContainer>
-                  👇🏾
+                  Lock your delegated deposit for a few days and withdraw anytime after this
                   <STestButtonContainer >
                     <input
                       className="button-53"
