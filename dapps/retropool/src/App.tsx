@@ -135,14 +135,14 @@ interface IAppState {
   delegationPeriodInDays: number;
 }
 
-const goerliEthereum = SUPPORTED_CHAINS[0];
-const goerliChainId = goerliEthereum.chain_id;
+const optimism = SUPPORTED_CHAINS[0];
+const optimismChainId = optimism.chain_id;
 
 const INITIAL_STATE: IAppState = {
   connector: null,
   fetching: false,
   connected: false,
-  chainId: goerliChainId,
+  chainId: optimismChainId,
   showModal: false,
   pendingRequest: false,
   uri: "",
@@ -156,27 +156,27 @@ const INITIAL_STATE: IAppState = {
   delegationPeriodInDays: 0,
 };
 
-const goerliProvider = new ethers.providers.JsonRpcProvider(goerliEthereum.rpc_url);
+const optimismProvider = new ethers.providers.JsonRpcProvider(optimism.rpc_url);
 
 const USDCContract = new ethers.Contract(
   USDCTokenAddress,
   ERC20Abi,
-  goerliProvider,
+  optimismProvider,
 );
 const prizePoolContract = new ethers.Contract(
   prizePoolAddress,
   prizePoolAbi,
-  goerliProvider,
+  optimismProvider,
 );
 const ticketContract = new ethers.Contract(
   ticketContractAddress,
   ticketContractAbi,
-  goerliProvider,
+  optimismProvider,
 );
 const TWABDelegatorContract = new ethers.Contract(
   TWABDelegatorContractAddress,
   TWABDelegatorContractAbi[0].abi,
-  goerliProvider,
+  optimismProvider,
 );
 
 class App extends React.Component<any, any> {
@@ -213,7 +213,7 @@ class App extends React.Component<any, any> {
     // check if already connected
     if (!connector.connected) {
       // create new session
-      await connector.createSession({ chainId: goerliChainId });
+      await connector.createSession({ chainId: optimismChainId });
     }
 
     // subscribe to events
@@ -289,7 +289,7 @@ class App extends React.Component<any, any> {
     const { chainId, accounts } = payload.params[0];
 
     const address = accounts[0];
-    const isContractAddress = await isSmartContract(address, goerliProvider);
+    const isContractAddress = await isSmartContract(address, optimismProvider);
 
     await this.setState({
       connected: true,
@@ -307,7 +307,7 @@ class App extends React.Component<any, any> {
 
   public onSessionUpdate = async (accounts: string[], chainId: number) => {
     const address = accounts[0];
-    const isContractAddress = await isSmartContract(address, goerliProvider);
+    const isContractAddress = await isSmartContract(address, optimismProvider);
     this.setState({ chainId, accounts, address, isContractAddress });
     await this.getAccountAssets();
   };
@@ -318,6 +318,8 @@ class App extends React.Component<any, any> {
     try {
       // get USDC balances
       const USDCBalance = await USDCContract.balanceOf(address);
+
+      console.log(ethers.utils.formatUnits(USDCBalance, 6), "USDCBalance");
 
       await this.setState({ fetching: false, address, assets: ethers.utils.formatUnits(USDCBalance, 6) });
     } catch (error) {
@@ -331,68 +333,62 @@ class App extends React.Component<any, any> {
   public actionButton = () => {
     const { depositAmount, assets, chainId, connector, isContractAddress } = this.state;
 
-    if (!isContractAddress) {
-      return (
-        <div>
-          <button
-            className="button-56"
-            style={{ marginBottom: "10px" }}
-            disabled>
-            Incompatible Wallet
-            {<div className="tool-tip">
-              <i className="tool-tip__icon">i</i>
-              <p className="tool-tip__info">
-                <span className="info">
-                  This app works with compatibale smart contract wallets like
-                  {' '}
-                  <span className="info__title">
-                    CANDIDE
-                  </span>
-                  {' '}
-                  that allows for bundled transcations
-                </span>
-              </p>
-            </div>}
-          </button>
-          <a
-            href='https://candidewallet.com'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            🐪 Get CANDIDE Wallet 🔗
-          </a>
-        </div>
-      )
-    } else if (chainId !== goerliChainId && connector) {
+    if (chainId !== optimismChainId && connector) {
+      console.log(optimismChainId, "optimismChainId");
       return (
         <button
           className="button-56"
-          onClick={() => connector.sendCustomRequest({
-            "id": 1,
-            "jsonrpc": "2.0",
-            "method": "wallet_switchEthereumChain",
-            "params": [{ chainId: goerliChainId }],
-          })}>
-          Connect to Goerli
+          onClick={() =>
+            connector.sendCustomRequest({
+              id: 1,
+              jsonrpc: "2.0",
+              method: "wallet_switchEthereumChain",
+              params: [{ chainId: optimismChainId }],
+            })
+          }
+        >
+          Connect to Optimism
         </button>
-      )
-    } else if (chainId === goerliChainId && depositAmount > assets && connector) {
+      );
+    } else if (!isContractAddress) {
       return (
-        <button
-          disabled
-          className="button-56">
+        <div>
+          <button className="button-56" style={{ marginBottom: "10px" }} disabled>
+            Incompatible Wallet
+            {
+              <div className="tool-tip">
+                <i className="tool-tip__icon">i</i>
+                <p className="tool-tip__info">
+                  <span className="info">
+                    This app works with compatibale smart contract wallets like{" "}
+                    <span className="info__title">CANDIDE</span> that allows for bundled
+                    transcations
+                  </span>
+                </p>
+              </div>
+            }
+          </button>
+          <a href="https://candidewallet.com" target="_blank" rel="noreferrer noopener">
+            🐪 Get CANDIDE Wallet 🔗
+          </a>
+        </div>
+      );
+    } else if (chainId === optimismChainId && depositAmount > assets && connector) {
+      return (
+        <button disabled className="button-56">
           Insufficient Balance
         </button>
-      )
+      );
     } else {
       return (
         <button
           className="button-56"
           onClick={this.handleConfirmModal}
-          disabled={depositAmount <= 0 || !isSmartContract}>
+          disabled={depositAmount <= 0 || !isSmartContract}
+        >
           Deposit & Delegate
         </button>
-      )
+      );
     }
   }
 
@@ -735,14 +731,27 @@ class App extends React.Component<any, any> {
             </SModalContainer>
           ) : result ? (
             <SModalContainer>
-              <SModalTitle>{"Call Request Approved"}</SModalTitle>
+              <SModalTitle>{"Congrats! 🐪"}</SModalTitle>
+              <SModalParagraph>
+                {"You delegated your winnings to Optimism RetroPGF 🏆🔴"}
+              </SModalParagraph>
+              <SModalParagraph>
+                {`You can withdraw your delegation anytime after ${delegationPeriodInDays} days on Pooltogether `}
+                <a
+                  href="https://tools.pooltogether.com/delegate"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Delegation Tool
+                </a>
+              </SModalParagraph>
               <STable>
                 {Object.keys(result).map(key => (
                   <SRow key={key}>
                     <SKey>{key}</SKey>
                     <SValue>
                       <a
-                        href={`https://goerli.etherscan.io/tx/${result[key].toString()}`}
+                        href={`https://optimistic.etherscan.io/tx/${result[key].toString()}`}
                         target='_blank'
                         rel='noreferrer noopener'
                       >

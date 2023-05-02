@@ -103,7 +103,7 @@ const Header = ({ connected, address, chainId, killSession }: IHeaderProps) => {
           ) : (
             <SUnsupportedChain>
               <p>Network not supported.</p>
-              <p>Please switch to Goerli in your wallet.</p>
+              <p>Please switch to Optimism in your wallet.</p>
             </SUnsupportedChain>
           )}
         </SActiveChain>
