@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import { useConnectWallet } from "@web3-onboard/react";
-import { BrowserProvider } from "ethers";
 
 export default function ConnectWallet() {
   const [{ wallet, connecting }, connect] = useConnectWallet();
-  const [ethersProvider, setProvider] = useState();
   const [account, setAccount] = useState();
 
   useEffect(() => {
@@ -15,12 +13,6 @@ export default function ConnectWallet() {
         balance: wallet.accounts[0].balance,
         ens: { name, avatar: avatar?.url },
       });
-    }
-  }, [wallet]);
-
-  useEffect(() => {
-    if (wallet?.provider) {
-      setProvider(new BrowserProvider(wallet.provider, 10));
     }
   }, [wallet]);
 

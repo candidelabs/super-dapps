@@ -1,4 +1,4 @@
-export default [{
+const ticketContractAbi = [{
     "inputs": [
         {
             "internalType": "string",
@@ -907,3 +907,4 @@ export default [{
     "type": "function"
 }
 ]
+export default ticketContractAbi;

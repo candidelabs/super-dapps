@@ -32,13 +32,6 @@ function RetroForm() {
     }
   }, [wallet]);
 
-  useEffect(() => {
-    if (ethersProvider && wallet && wallet.provider) {
-      checkIsSmartContract();
-      getUserBalanceUSDC();
-    }
-  }, [ethersProvider, wallet]);
-
   const USDCContract = new Contract(USDCTokenAddress, ERC20Abi, ethersProvider);
 
   const [modalShow, setModalShow] = useState(false);
@@ -98,6 +91,13 @@ function RetroForm() {
       return { disabledButton: false, value: "Fund Public Goods" };
     }
   };
+
+  useEffect(() => {
+    if (ethersProvider && wallet && wallet.provider) {
+      checkIsSmartContract();
+      getUserBalanceUSDC();
+    }
+  }, [ethersProvider, wallet]);
 
   if (wallet?.provider) {
     return (

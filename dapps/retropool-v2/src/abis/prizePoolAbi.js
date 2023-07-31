@@ -1,4 +1,4 @@
-export default [
+const prizePoolAbi = [
     {
         "inputs": [
             {
@@ -842,3 +842,5 @@ export default [
         "type": "function"
     }
 ]
+
+export default prizePoolAbi;

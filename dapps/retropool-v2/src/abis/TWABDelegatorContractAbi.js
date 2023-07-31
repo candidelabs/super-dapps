@@ -1,4 +1,4 @@
-export default [
+const TWABDelegatorContractAbi = [
     {
         "address": "0xb38e46EBf90888D621Cde5661D3cC2476d7bCc2e",
         "abi": [
@@ -1534,3 +1534,5 @@ export default [
         }
     }
 ]
+
+export default TWABDelegatorContractAbi;
