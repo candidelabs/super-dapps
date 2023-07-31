@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Modals */
+.my-modal .modal-content {
+  background: rgba(0, 0, 0, 0.5); /* Set a darker background color with more transparency */
+  border-radius: "16px";
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+.button-connect {
+  background-color: #f8ece1;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #1f2546;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-connect:focus {
+  outline: 0;
+}
+
+.button-connect:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-connect:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-connect {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+.renaissance-button {
+  background-color: #cda434; /* Dark red background color */
+  color: #fff; /* White text color */
+  font-size: 18px; /* Adjust font size as needed */
+  font-family: "Times New Roman", serif; /* Classical font */
+  padding: 5px 15px; /* Adjust padding as needed */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* Remove underline for links (optional) */
+  border: 2px solid #cda434; /* Golden border */
+}
+
+.renaissance-button:hover {
+  background-color: #ffd700; /* Lighter golden color on hover */
+  border-color: #ffd700; /* Lighter golden border on hover */
+}
+
+.disabled-button {
+  cursor: not-allowed;
+  opacity: 0.6;
+  /* Add any additional styles for the disabled button */
+}
+
+/* Desktop Images */
+@media (max-width: 768px) {
+  /* Hide the image on mobile devices (screen width <= 768px) */
+  .desktop-image {
+    display: none;
+  }
+}
