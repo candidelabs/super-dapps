@@ -8,7 +8,8 @@ import "./App.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Faq from "./components/Faq";
 import MainHeader from "./components/MainHeader";
-import trophy from "./assets/images/pooltogether-trophy.png"
+import trophy from "./assets/images/pooltogether-trophy.png";
+import Footer from "./components/Footer";
 
 const apiKey = process.env.REACT_APP_WEB3_ONBOARD_KEY;
 const infuraKey = process.env.REACT_APP_NFURA_KEY;
@@ -49,7 +50,7 @@ function App() {
         style={{
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
+          // alignItems: "center",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -62,15 +63,15 @@ function App() {
           <Container>
             <Row
               className="justify-content-md-center"
-              style={{ marginBottom: "2rem" }}
+              style={{ marginTop: "7rem" }}
             >
               <Col md="auto">
                 <MainHeader />
-              </Col>{" "}
+              </Col>
             </Row>
             <Row
               className="justify-content-md-center"
-              style={{ marginBottom: "2rem" }}
+              style={{ marginTop: "2rem", textAlign: "center" }}
             >
               <Col md="auto">
                 <ConnectWallet />
@@ -81,24 +82,15 @@ function App() {
                 <RetroForm />
               </Col>
             </Row>
-            <Row className="justify-content-md-center">
-              <Col md="auto">
-                <h1
-                  style={{
-                    textAlign: "center",
-                    color: "white",
-                    fontFamily: "IMFellEnglishSC-Regular",
-                  }}
-                >
-                  FAQ
-                </h1>
-              </Col>
-            </Row>
-            <Row className="justify-content-md-center">
+            <Row
+              className="d-flex justify-content-center"
+              style={{ textAlign: "center" }}
+            >
               <Col md="auto">
                 <Faq />
               </Col>
             </Row>
+            <Footer />
           </Container>
         </div>
       </div>

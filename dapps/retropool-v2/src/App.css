@@ -52,7 +52,6 @@
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
   color: #1f2546;
-  display: flex;
   font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -67,7 +66,6 @@
   text-decoration-thickness: auto;
   width: 100%;
   max-width: 200px;
-  position: relative;
   cursor: pointer;
   transform: rotate(-2deg);
   user-select: none;
