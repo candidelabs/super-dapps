@@ -1,7 +1,7 @@
 # Retroactive Public Goods Pooling
 
 <div align="center" width="100%">
-    <img src="./src/assets/images/pooltogether-logo--purple-gradient.svg" alt="pooltogether" width="40%"/>
+    <img src="./public/retropool_background.png" alt="pooltogether" width="100%"/>
 </div>
 <br/>
 
@@ -15,6 +15,10 @@ This project is a tool that allows users to deposit and delegate their chances o
 RetroPGF is Optimism mechanism for funding open-source software. The Optimism Collective’s second round of Retroactive Public Goods Funding (RetroPGF) takes place in Q1 2023.
 
 This tool aims to simplify the stage of a user journey of depositing and delegating to RetroPGF in PoolTogether. While the PoolTogether frontend is extremely well designed 3, it is constrained by EOA wallets’ limitations. A user wanting to deposit and delegate to RetroPGF with an EOA has a multi-step process involving several transaction executions and two different web pages.
+
+<div align="center" width="100%">
+    <img src="./src/assets/images/pooltogether-logo--purple-gradient.svg" alt="pooltogether" width="40%"/>
+</div>
 
 Harnessing the power PoolTogether as a no-loss saving protocol and CANDIDE account abstraction benefits to remove friction in participating in public goods funding.
 
