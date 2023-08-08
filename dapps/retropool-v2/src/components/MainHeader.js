@@ -12,6 +12,7 @@ const MainHeader = () => {
             textAlign: "center",
             color: "white",
             fontFamily: "IMFellEnglishSC-Regular",
+            fontSize: "45px",
           }}
         >
           RetroActive Public Goods Pooling
