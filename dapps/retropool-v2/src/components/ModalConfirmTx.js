@@ -78,7 +78,7 @@ function ModalConfirmTx({
               <a
                 target="_blank"
                 rel="noreferrer"
-                href={`https://optimistic.etherscan.io/tx/${txReceipt.hash}`}
+                href={`https://app.jiffyscan.xyz/userOpHash/${txReceipt.hash}`}
               >
                 block explorer
               </a>

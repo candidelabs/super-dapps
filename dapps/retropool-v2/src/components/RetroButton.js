@@ -166,21 +166,28 @@ export default function RetroButton({
         ],
       };
       // send transaction
-      const txHash = await wallet.provider.request(customRequest);
+      const userOpHash = await wallet.provider.request(customRequest);
 
-      const transaction = await ethersProvider.getTransaction(txHash);
+      // const transaction = await ethersProvider.getTransaction(txHash);
       while (true) {
-        if (transaction) {
-          const receipt = await ethersProvider.getTransactionReceipt(txHash);
+        if (userOpHash) {
+          console.log(userOpHash, "userOpHash");
+          const receipt = await wallet.provider.request({
+            method: "wallet_getBundleStatus",
+            params: [userOpHash],
+          });
+          console.log(receipt, "receipt");
           if (receipt) {
-            if (receipt.status === 1) {
-              console.log("Transaction was successful!");
+            const response = JSON.parse(receipt).calls[0].status;
+            if (response === "CONFIRMED") {
               updateTxReceipt(receipt);
-            } else if (receipt.status === 0) {
-              console.log("Transaction failed!");
+              break;
+            } else if (response === "PENDING") {
+              await new Promise((resolve) => setTimeout(resolve, 5000));
+            } else if (response === "FAILED") {
               updateTxReceipt(receipt);
+              break;
             }
-            break;
           } else {
             // Transaction is still pending
             console.log("Transaction is pending.");
