@@ -19,7 +19,7 @@ const wcV2InitOptions = {
   projectId: process.env.REACT_APP_WC_KEY,
   requiredChains: [10],
   additionalRequiredMethods: ["wallet_sendFunctionCallBundle"],
-  additionalOptionaldMethods: ["wallet_showBundleStatus"],
+  additionalOptionalMethods: ["wallet_showBundleStatus"],
   dappUrl: "http://retropool.app.candidewallet.com",
 };
 
