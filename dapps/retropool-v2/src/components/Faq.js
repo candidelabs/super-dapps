@@ -11,7 +11,7 @@ function FaqBody() {
         <Accordion.Header>Which Wallets work with this app?</Accordion.Header>
         <Accordion.Body>
           <p>
-            Smart wallets like Candide. Regular wallets like MetamMask
+            Smart wallets like Candide. Regular wallets like MetaMask
             and Rainbow can't do the magic.
           </p>
           <p>
@@ -61,7 +61,7 @@ function FaqBody() {
           <p>
             This dapp delegates winnings to Optimism RetroPGF address through a
             series of transactions. Candide Wallet executes all transactions in
-            a signle one, and Pooltogether sponsors the gas
+            a single one, and Pooltogether sponsors the gas
           </p>
           <p>
             Interested in the technical details? Checkout the open-source code
