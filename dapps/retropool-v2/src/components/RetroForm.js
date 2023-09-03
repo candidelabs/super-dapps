@@ -10,7 +10,6 @@ import Col from "react-bootstrap/Col";
 import { useConnectWallet } from "@web3-onboard/react";
 import ERC20Abi from "../abis/ERC20Abi";
 import { USDCTokenAddress, optiRetroPGFAddress } from "../helpers/consts";
-import { isSmartContract as checkIfIsSmartContract } from "../helpers/utilities";
 import ModalConfirmTx from "./ModalConfirmTx";
 import prizeImage from "../assets/images/prize_icon.png";
 import retroPoolScreen from "../assets/images/retro_pool_screen.png";
@@ -61,14 +60,6 @@ function RetroForm() {
 
   // check if account is smart contract wallet
   const [isSmartContract, setIsSmartContract] = useState(false);
-  const checkIsSmartContract = async () => {
-    const code = await checkIfIsSmartContract(
-      wallet.accounts[0].address,
-      ethersProvider
-    );
-
-    setIsSmartContract(code);
-  };
 
   // get user Balance USDC
   const getUserBalanceUSDC = async () => {
@@ -94,7 +85,11 @@ function RetroForm() {
 
   useEffect(() => {
     if (ethersProvider && wallet && wallet.provider) {
-      checkIsSmartContract();
+      const { methods } = wallet.provider.connector.rpc;
+
+      if (methods.includes("wallet_sendFunctionCallBundle")) {
+        setIsSmartContract(true);
+      }
       getUserBalanceUSDC();
     }
   }, [ethersProvider, wallet]);
