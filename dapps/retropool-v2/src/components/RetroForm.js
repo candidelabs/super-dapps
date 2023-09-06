@@ -84,8 +84,8 @@ function RetroForm() {
   };
 
   useEffect(() => {
-    if (ethersProvider && wallet && wallet.provider) {
-      const { methods } = wallet.provider.connector.rpc;
+    if (ethersProvider && wallet && wallet.instance) {
+      const { methods } = wallet.instance.namespaces.eip155;
 
       if (methods.includes("wallet_sendFunctionCallBundle")) {
         setIsSmartContract(true);
