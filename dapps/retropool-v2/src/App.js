@@ -18,8 +18,7 @@ const rpcUrl = `https://optimism-mainnet.infura.io/v3/${infuraKey}`;
 const wcV2InitOptions = {
   projectId: process.env.REACT_APP_WC_KEY,
   requiredChains: [10],
-  additionalRequiredMethods: ["wallet_sendFunctionCallBundle"],
-  additionalOptionalMethods: ["wallet_showBundleStatus"],
+  additionalRequiredMethods: ["wallet_sendFunctionCallBundle","wallet_getBundleStatus"],
   dappUrl: "http://retropool.app.candidewallet.com",
 };
 

@@ -18,7 +18,7 @@ function RetroForm() {
   const [ethersProvider, setProvider] = useState();
   const [{ wallet }] = useConnectWallet();
 
-  const [txReceipt, setTxReceipt] = useState("");
+  const [txReceipt, setTxReceipt] = useState({ status: "", hash: "" });
 
   const updateTxReceipt = (tx) => {
     setTxReceipt(tx);

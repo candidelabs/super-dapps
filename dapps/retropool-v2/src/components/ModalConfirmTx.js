@@ -26,7 +26,7 @@ function ModalConfirmTx({
         centered
         dialogClassName="my-modal"
       >
-        {txReceipt.status === 1 ? (
+        {txReceipt.status === "CONFIRMED" ? (
           <>
             <Modal.Header closeButton>
               <Modal.Title
@@ -84,7 +84,7 @@ function ModalConfirmTx({
               </a>
             </Modal.Footer>
           </>
-        ) : txReceipt.status === 0 ? (
+        ) : txReceipt.status === "FAILED" ? (
           <>
             <Modal.Header closeButton>
               <Modal.Title
