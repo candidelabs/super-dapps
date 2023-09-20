@@ -30,10 +30,19 @@ function RetroForm() {
       setProvider(new BrowserProvider(wallet.provider, 10));
     }
 
-    const pairing = localStorage.getItem('wc@2:core:0.3//pairing');
+    const pairing = localStorage.getItem("wc@2:core:0.3//pairing");
     if (pairing) {
       const pairignParsed = JSON.parse(pairing);
-      if (pairignParsed[0].peerMetadata.name === "CANDIDE Wallet") {
+
+      const wallets = [];
+
+      pairignParsed.forEach((p) => {
+        if (p.hasOwnProperty("peerMetadata")) {
+          wallets.push(p);
+        }
+      });
+
+      if (wallets[0].peerMetadata.name === "CANDIDE Wallet") {
         setIsSmartContract(true);
       }
     }
@@ -216,12 +225,13 @@ function RetroForm() {
                   <Card.Text className="mb-4">
                     <Alert key="warning" variant="warning">
                       <p>
-                        This dapp won't work with your EOA wallet (metamask, rainbow, etc..), since these wallets don't support batching, or
-                        one click transactions.
+                        This dapp won't work with your EOA wallet (metamask,
+                        rainbow, etc..), since these wallets don't support
+                        batching, or one click transactions.
                       </p>
                       <p>
-                        Get a smart wallet, you won't regret. Even
-                        Vitalik has one.
+                        Get a smart wallet, you won't regret. Even Vitalik has
+                        one.
                       </p>
                       <p>
                         Plus, your transaction fees are FREE when you use this
