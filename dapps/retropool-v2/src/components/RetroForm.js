@@ -25,9 +25,17 @@ function RetroForm() {
   };
 
   useEffect(() => {
-    // If the wallet has a provider than the wallet is connected
+    // If the wallet has a provider then the wallet is connected
     if (wallet?.provider) {
       setProvider(new BrowserProvider(wallet.provider, 10));
+    }
+
+    const pairing = localStorage.getItem('wc@2:core:0.3//pairing');
+    if (pairing) {
+      const pairignParsed = JSON.parse(pairing);
+      if (pairignParsed[0].peerMetadata.name === "CANDIDE Wallet") {
+        setIsSmartContract(true);
+      }
     }
   }, [wallet]);
 
@@ -84,12 +92,7 @@ function RetroForm() {
   };
 
   useEffect(() => {
-    if (ethersProvider && wallet && wallet.instance) {
-      const { methods } = wallet.instance.namespaces.eip155;
-
-      if (methods.includes("wallet_sendFunctionCallBundle")) {
-        setIsSmartContract(true);
-      }
+    if (ethersProvider && wallet) {
       getUserBalanceUSDC();
     }
   }, [ethersProvider, wallet]);
@@ -213,17 +216,16 @@ function RetroForm() {
                   <Card.Text className="mb-4">
                     <Alert key="warning" variant="warning">
                       <p>
-                        This dapp won't work with your EOA wallet (metamask
-                        type), since these wallets don't support batching, or
+                        This dapp won't work with your EOA wallet (metamask, rainbow, etc..), since these wallets don't support batching, or
                         one click transactions.
                       </p>
                       <p>
-                        Get a smart contract wallet, you won't regret. Even
+                        Get a smart wallet, you won't regret. Even
                         Vitalik has one.
                       </p>
                       <p>
                         Plus, your transaction fees are FREE when you use this
-                        dapp.
+                        dapp*.
                       </p>
                       <hr />
                       <Button type="button" variant="primary">
