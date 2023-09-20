@@ -12,7 +12,7 @@ import trophy from "./assets/images/pooltogether-trophy.png";
 import Footer from "./components/Footer";
 
 const apiKey = process.env.REACT_APP_WEB3_ONBOARD_KEY;
-const infuraKey = process.env.REACT_APP_NFURA_KEY;
+const infuraKey = process.env.REACT_APP_INFURA_KEY;
 const rpcUrl = `https://optimism-mainnet.infura.io/v3/${infuraKey}`;
 
 const wcV2InitOptions = {
@@ -24,7 +24,7 @@ const wcV2InitOptions = {
 
 const walletConnect = walletConnectModule(wcV2InitOptions);
 
-const web3Onboard = init({
+init({
   theme: "dark",
   apiKey,
   wallets: [walletConnect],
@@ -43,9 +43,8 @@ const web3Onboard = init({
   },
 });
 
-function App() {
+function App() {  
   return (
-    <Web3OnboardProvider web3Onboard={web3Onboard}>
       <div
         style={{
           display: "flex",
@@ -94,7 +93,6 @@ function App() {
           </Container>
         </div>
       </div>
-    </Web3OnboardProvider>
   );
 }
 
