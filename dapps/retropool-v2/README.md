@@ -52,7 +52,7 @@ The tool’s frontend communicates JSON-RPC method for sending multiple function
 </div>
 <br/>
 
-Smart contract wallets that support [EIP-5792](https://eips.ethereum.org/EIPS/eip-5792). EOA wallets like Metamask cannot execute bundled function calls
+Smart contract wallets that support batching functionality with EIP-5792. Learn how to integrate [batching into your dapp](https://docs.candide.dev/dapps/guides/batch-transactions).
 
 ## Gas Sponsorship
 
