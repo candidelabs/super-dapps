@@ -11,12 +11,12 @@ function FaqBody() {
         <Accordion.Header>Which Wallets work with this app?</Accordion.Header>
         <Accordion.Body>
           <p>
-            Smart wallets like Candide. Regular wallets like MetaMask
-            and Rainbow can't do the magic.
+            Smart wallets like Candide. Regular wallets like MetaMask and
+            Rainbow can't do the magic.
           </p>
           <p>
-            Candide allows batch transactions. It powers this app one
-            click and gasless experience.
+            Candide allows batch transactions. It powers this app one click and
+            gasless experience.
           </p>
           <Button type="button" variant="primary">
             <a
@@ -93,11 +93,12 @@ function FaqBody() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://tools.pooltogether.com/delegate"
+            href="https://tools.pooltogether.com/delegate?delegation_chain=optimism"
           >
             Deposit Delegator Tool
           </a>{" "}
-          to change stop delegating your winnings
+          to stop delegating your winnings to RetroPGF.eth. After that, you can
+          withdraw your tickets on PoolTogether, or keep winings for yourself.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="5">
