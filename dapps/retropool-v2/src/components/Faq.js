@@ -59,7 +59,7 @@ function FaqBody() {
             time.
           </p>
           <p>
-            This dapp delegates winnings to Optimism RetroPGF address through a
+            This dapp delegates winnings to your chosen RPG Receipient through a
             series of transactions. Candide Wallet executes all transactions in
             a single one, and Pooltogether sponsors the gas
           </p>
@@ -97,7 +97,7 @@ function FaqBody() {
           >
             Deposit Delegator Tool
           </a>{" "}
-          to stop delegating your winnings to RetroPGF.eth. After that, you can
+          to stop delegating your winnings. After that, you can
           withdraw your tickets on PoolTogether, or keep winings for yourself.
         </Accordion.Body>
       </Accordion.Item>
