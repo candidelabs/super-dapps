@@ -9,6 +9,7 @@ import Stack from "react-bootstrap/Stack";
 
 import trophhyImage from "../assets/images/pooltogether-trophy.png";
 import sadFace from "../assets/images/sad_face.jpg";
+import TwitterShareButton from "../components/TweetButton";
 
 function ModalConfirmTx({
   show,
@@ -82,6 +83,13 @@ function ModalConfirmTx({
               >
                 block explorer
               </a>
+              <TwitterShareButton
+                  url="https://twitter.com/candidewallet/status/1704901643081244996"
+                  text={`I just no-loss donated my winnings to ${
+                    submittedValue.receipient.handle ||
+                    submittedValue.receipient.name
+                  }. Join me!`}
+                />
             </Modal.Footer>
           </>
         ) : txReceipt.status === "FAILED" ? (
@@ -192,13 +200,38 @@ function ModalConfirmTx({
                   Delegation Period
                 </Col>
               </Row>
-              <Row>
+              <Row style={{ marginBottom: "25px" }}>
                 <Col
                   style={{
                     color: "#ffffff",
                   }}
                 >
                   <h3>{submittedValue.days} Days</h3>
+                </Col>
+              </Row>
+              <Row>
+                <Col
+                  style={{
+                    color: "#999997",
+                  }}
+                >
+                  Receipient
+                </Col>
+              </Row>
+              <Row>
+                <Col
+                  style={{
+                    color: "#ffffff",
+                  }}
+                >
+                  <h3>{submittedValue.receipient.name} </h3>
+                  <a
+                    rel="noreferrer"
+                    href={`https://optimistic.etherscan.io/address/${submittedValue.receipient.address}`}
+                    target="_blank"
+                  >
+                    {submittedValue.receipient.address}
+                  </a>
                 </Col>
               </Row>
             </Modal.Body>

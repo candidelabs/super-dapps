@@ -6,13 +6,16 @@ import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Dropdown from "react-bootstrap/Dropdown";
+import { CustomMenu, CustomToggle } from "../components/DropdownList";
 
 import { useConnectWallet } from "@web3-onboard/react";
 import ERC20Abi from "../abis/ERC20Abi";
-import { USDCTokenAddress, optiRetroPGFAddress } from "../helpers/consts";
+import { USDCTokenAddress } from "../helpers/consts";
 import ModalConfirmTx from "./ModalConfirmTx";
 import prizeImage from "../assets/images/prize_icon.png";
 import retroPoolScreen from "../assets/images/retro_pool_screen.png";
+import rpgfData from "../data/RPGFProjectMetadata.json";
 
 function RetroForm() {
   const [ethersProvider, setProvider] = useState();
@@ -54,9 +57,16 @@ function RetroForm() {
   const [rangeValue, setRangeValue] = useState(90);
   const [amount, setAmount] = useState(0);
   const [userUSDCBalance, setUserUSDCBalance] = useState(0);
+  const [selectedItem, setSelectedItem] = useState({
+    name: "Recipient",
+    address: "0x",
+    keyevent: "0",
+    handle: "",
+  });
   const [submittedValue, setSubmittedValue] = useState({
     amount,
     days: rangeValue,
+    receipient: selectedItem,
   });
 
   const handleRangeChange = (e) => {
@@ -69,9 +79,14 @@ function RetroForm() {
     setModalShow(true);
     if (
       amount !== submittedValue.amount ||
-      rangeValue !== submittedValue.days
+      rangeValue !== submittedValue.days ||
+      selectedItem !== submittedValue.receipient
     ) {
-      setSubmittedValue({ amount, days: rangeValue });
+      setSubmittedValue({
+        amount,
+        days: rangeValue,
+        receipient: selectedItem,
+      });
     }
   };
 
@@ -95,6 +110,8 @@ function RetroForm() {
       return { disabledButton: true, value: "Enter Amount" };
     } else if (amount > userUSDCBalance) {
       return { disabledButton: true, value: "Insufficient balance" };
+    } else if (selectedItem.keyevent === "0") {
+      return { disabledButton: true, value: "Select a Recipient" };
     } else {
       return { disabledButton: false, value: "Fund Public Goods" };
     }
@@ -105,6 +122,14 @@ function RetroForm() {
       getUserBalanceUSDC();
     }
   }, [ethersProvider, wallet]);
+
+  const handleSelect = (eventKey) => {
+    // Find the selected item based on the eventKey
+    const selected = rpgfData.find(
+      (item) => item.keyevent === Number(eventKey)
+    );
+    setSelectedItem(selected);
+  };
 
   if (wallet?.provider) {
     return (
@@ -141,23 +166,6 @@ function RetroForm() {
                   Pool For Public Goods
                 </h1>
               </Card.Title>
-              <Card.Text>
-                <p
-                  style={{
-                    textAlign: "center",
-                    color: "white",
-                  }}
-                >
-                  Your wins goes to Optimism RetroPGF.eth address:{" "}
-                  <a
-                    rel="noreferrer"
-                    href={`https://optimistic.etherscan.io/address/${optiRetroPGFAddress}`}
-                    target="_blank"
-                  >
-                    0x15D..🔗
-                  </a>
-                </p>
-              </Card.Text>
               <Form onSubmit={handleFormSubmit}>
                 <Form.Group className="mb-3">
                   <Form.Label>Amount</Form.Label>
@@ -187,6 +195,32 @@ function RetroForm() {
                   </Form.Text>
                 </Form.Group>
 
+                <Form.Group className="mb-3">
+                  <Dropdown onSelect={handleSelect}>
+                    <Dropdown.Toggle
+                      as={CustomToggle}
+                      id="dropdown-custom-components"
+                    >
+                      {selectedItem.name}
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu as={CustomMenu}>
+                      {rpgfData.map((item, index) => (
+                        <Dropdown.Item
+                          key={index}
+                          eventKey={item.keyevent}
+                          active={item.active}
+                        >
+                          {item.name}
+                        </Dropdown.Item>
+                      ))}
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Form.Text className="text-muted">
+                    Your winnings are directly sent to the orginisation of your
+                    choice
+                  </Form.Text>
+                </Form.Group>
                 <button
                   type="submit"
                   disabled={getButtonLabel().disabledButton}
@@ -196,7 +230,6 @@ function RetroForm() {
                 >
                   {getButtonLabel().value}
                 </button>
-
                 <ModalConfirmTx
                   show={modalShow}
                   onHide={() => setModalShow(false)}

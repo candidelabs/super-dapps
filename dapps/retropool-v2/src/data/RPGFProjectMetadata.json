@@ -1,0 +1,1157 @@
+[
+  {
+    "name": "L2BEAT",
+    "address": "0xeA78912803bE5E356EaC2b8e127D4BA87230A48e",
+    "Twitter": "https://twitter.com/l2beat",
+    "keyevent": 1,
+    "handle": "@l2beat"
+  },
+  {
+    "name": "ETHGlobal",
+    "address": "0x336DEe4022d6CC2F95cfe9e0949B9E0EDDAC457D",
+    "Twitter": "https://twitter.com/ETHGlobal",
+    "keyevent": 2,
+    "handle": "@ETHGlobal"
+  },
+  {
+    "name": "BuidlGuidl",
+    "address": "0xa81a6a910FeD20374361B35C451a4a44F86CeD46",
+    "Twitter": "https://twitter.com/buidlguidl",
+    "keyevent": 3,
+    "handle": "@buidlguidl"
+  },
+  {
+    "name": "Ethers",
+    "address": "0x8ba1f109551bD432803012645Ac136ddd64DBA72",
+    "Twitter": "https://twitter.com/ricmoo",
+    "keyevent": 4,
+    "handle": "@ricmoo"
+  },
+  {
+    "name": "ZachXBT",
+    "address": "0x9D727911B54C455B0071A7B682FcF4Bc444B5596",
+    "Twitter": "https://twitter.com/zachxbt",
+    "keyevent": 5,
+    "handle": "@zachxbt"
+  },
+  {
+    "name": "OPCraft & MUD (Lattice)",
+    "address": "0xFb74562ec4e55c4BE2800b79a60e10ab6175Fa3a",
+    "Twitter": "https://twitter.com/latticexyz",
+    "keyevent": 6,
+    "handle": "@latticexyz"
+  },
+  {
+    "name": "OpenZeppelin",
+    "address": "0x41f89516DbFDfF2A902AdD2E141C3c22b561BFBc",
+    "Twitter": "https://twitter.com/OpenZeppelin",
+    "keyevent": 7,
+    "handle": "@OpenZeppelin"
+  },
+  {
+    "name": "DefiLlama",
+    "address": "0x3754a10c1cA723961068B2653109E6201982Dd9c",
+    "Twitter": "https://twitter.com/defillama",
+    "keyevent": 8,
+    "handle": "@defillama"
+  },
+  {
+    "name": "Lighthouse",
+    "address": "0x0ad5d3975258776cF81b9dcbe6fF4ed0Ae82b29e",
+    "Twitter": "https://twitter.com/sigp_io",
+    "keyevent": 9,
+    "handle": "@sigp_io"
+  },
+  {
+    "name": "wagmi",
+    "address": "0xd2135CfB216b74109775236E36d4b433F1DF507B",
+    "Twitter": "https://twitter.com/wagmi_sh",
+    "keyevent": 10,
+    "handle": "@wagmi_sh"
+  },
+  {
+    "name": "Remix Project",
+    "address": "0xeDf80D8bdB50A2941A4Ffe668c558c2ce0bF490F",
+    "Twitter": "https://twitter.com/EthereumRemix",
+    "keyevent": 11,
+    "handle": "@EthereumRemix"
+  },
+  {
+    "name": "Gitcoin",
+    "address": "0xc92D76E01BD4e7CE25819c94FC6c3aea7b2Cd155",
+    "Twitter": "https://twitter.com/gitcoin",
+    "keyevent": 12,
+    "handle": "@gitcoin"
+  },
+  {
+    "name": "Foundry",
+    "address": "0x04b9C1064fE1bc514BE5E7D6fa712444ED14D261",
+    "Twitter": "https://twitter.com/gakonst",
+    "keyevent": 13,
+    "handle": "@gakonst"
+  },
+  {
+    "name": "Snapshot",
+    "address": "0x3E87e5BCE4dEb09FeE5045EF15E18f873212E6A7",
+    "Twitter": "https://twitter.com/SnapshotLabs",
+    "keyevent": 14,
+    "handle": "@SnapshotLabs"
+  },
+  {
+    "name": "rotki",
+    "address": "0x9531C059098e3d194fF87FebB587aB07B30B1306",
+    "Twitter": "https://twitter.com/rotkiapp",
+    "keyevent": 15,
+    "handle": "@rotkiapp"
+  },
+  {
+    "name": "Goerli",
+    "address": "0x59cc3Fc56B8B2988F259EC1E6f3446907130f728",
+    "Twitter": "",
+    "keyevent": 16,
+    "handle": ""
+  },
+  {
+    "name": "Erigon",
+    "address": "0x9D20893054afC4A74b856089c44F9A09d1C38Db0",
+    "Twitter": "https://twitter.com/ErigonEth",
+    "keyevent": 17,
+    "handle": "@ErigonEth"
+  },
+  {
+    "name": "Nethermind",
+    "address": "0xdd71ebf2b1ce923e3e231388a8a7cdba253485c1",
+    "Twitter": "https://twitter.com/nethermindeth",
+    "keyevent": 18,
+    "handle": "@nethermindeth"
+  },
+  {
+    "name": "Vyper",
+    "address": "0xAbfA48BCc0F96Fc70be7a4156b0a74Ea350167fD",
+    "Twitter": "https://twitter.com/vyperlang",
+    "keyevent": 19,
+    "handle": "@vyperlang"
+  },
+  {
+    "name": "Kernel",
+    "address": "0x5E87ccdc1C2681c7E76d9c927dB637F2E3eabDCA",
+    "Twitter": "https://twitter.com/KERNEL0x",
+    "keyevent": 20,
+    "handle": "@KERNEL0x"
+  },
+  {
+    "name": "CryptoZombies",
+    "address": "0xbb105E3c6D6406A3F0aAB98cD8D0E3a127bD6436",
+    "Twitter": "https://twitter.com/CryptoZombiesHQ",
+    "keyevent": 21,
+    "handle": "@CryptoZombiesHQ"
+  },
+  {
+    "name": "Giveth",
+    "address": "0x4D9339dd97db55e3B9bCBE65dE39fF9c04d1C2cd",
+    "Twitter": "https://twitter.com/Givethio",
+    "keyevent": 22,
+    "handle": "@Givethio"
+  },
+  {
+    "name": "Week in Ethereum News",
+    "address": "0x13ebd3443fa5575F0Eb173e323D8419F7452CfB1",
+    "Twitter": "https://twitter.com/weekinethnews",
+    "keyevent": 23,
+    "handle": "@weekinethnews"
+  },
+  {
+    "name": "Safe (previously Gnosis Safe)",
+    "address": "0x3EDf6868d7c42863E44072DaEcC16eCA2804Dea1",
+    "Twitter": "https://twitter.com/safe",
+    "keyevent": 24,
+    "handle": "@safe"
+  },
+  {
+    "name": "beaconcha.in",
+    "address": "0x9d4E94dB689Bc471E45b0a18B7BdA36FcCeC9c3b",
+    "Twitter": "https://twitter.com/beaconcha_in",
+    "keyevent": 25,
+    "handle": "@beaconcha_in"
+  },
+  {
+    "name": "Agora",
+    "address": "0x3a153B0608a87a4BdD4F7Afa90670110d4C",
+    "Twitter": "https://twitter.com/nounsagora",
+    "keyevent": 26,
+    "handle": "@nounsagora"
+  },
+  {
+    "name": "Polynya",
+    "address": "0x429F9aDA43e9F345CbB85EC88681BB70Df808892",
+    "Twitter": "https://twitter.com/apolynya",
+    "keyevent": 27,
+    "handle": "@apolynya"
+  },
+  {
+    "name": "eth.limo",
+    "address": "0xB352bB4E2A4f27683435f153A259f1B207218b1b",
+    "Twitter": "https://twitter.com/eth_limo",
+    "keyevent": 28,
+    "handle": "@eth_limo"
+  },
+  {
+    "name": "Synpress",
+    "address": "0x7b57c388e6149b5c197B925037602d5B6bafFbCc",
+    "Twitter": "https://twitter.com/synpress_",
+    "keyevent": 29,
+    "handle": "@synpress_"
+  },
+  {
+    "name": "Cannon",
+    "address": "0x07Aeeb7E544A070a2553e142828fb30c214a1F86",
+    "Twitter": "",
+    "keyevent": 30,
+    "handle": ""
+  },
+  {
+    "name": "Lodestar",
+    "address": "0xc8F9f8C913d6fF031c65e3bF7c7a51Ad1f3a86E5",
+    "Twitter": "https://twitter.com/lodestar_eth",
+    "keyevent": 31,
+    "handle": "@lodestar_eth"
+  },
+  {
+    "name": "Teku",
+    "address": "0xFF7B65dDc2Ffb7f6AC527b4C2F048946B3A5eaF3",
+    "Twitter": "https://twitter.com/Teku_ConsenSys",
+    "keyevent": 32,
+    "handle": "@Teku_ConsenSys"
+  },
+  {
+    "name": "Revoke.cash",
+    "address": "0xe126b3E5d052f1F575828f61fEBA4f4f2603652a",
+    "Twitter": "https://twitter.com/RevokeCash",
+    "keyevent": 33,
+    "handle": "@RevokeCash"
+  },
+  {
+    "name": "TrueBlocks",
+    "address": "0x89D107a9F019B4DC5dCa227d991c89e4E7251Ff5",
+    "Twitter": "https://twitter.com/trueblocks",
+    "keyevent": 34,
+    "handle": "@trueblocks"
+  },
+  {
+    "name": "Otterscan",
+    "address": "0x43a0744e8a1A63C481aaDD5CEA12833D6976F851",
+    "Twitter": "https://twitter.com/otterscan",
+    "keyevent": 35,
+    "handle": "@otterscan"
+  },
+  {
+    "name": "Blockscout",
+    "address": "0x242ba6d68FfEb4a098B591B32d370F973FF882B7",
+    "Twitter": "https://twitter.com/blockscoutcom",
+    "keyevent": 36,
+    "handle": "@blockscoutcom"
+  },
+  {
+    "name": "Where has the OP Gone?",
+    "address": "0x4f41877773e44F2275dA1942FEe898556821bf66",
+    "Twitter": "https://twitter.com/jack_anorak",
+    "keyevent": 37,
+    "handle": "@jack_anorak"
+  },
+  {
+    "name": "Cryptocurrency and Friends",
+    "address": "0xaFaBa30769374EA0F971300dE79c62Bf94B464d5",
+    "Twitter": "https://twitter.com/stonecoldpat0",
+    "keyevent": 38,
+    "handle": "@stonecoldpat0"
+  },
+  {
+    "name": "EthernautDAO",
+    "address": "0x2431BFA47bB3d494Bd720FaC71960F27a54b6FE7",
+    "Twitter": "https://twitter.com/EthernautDAO",
+    "keyevent": 39,
+    "handle": "@EthernautDAO"
+  },
+  {
+    "name": "Keccak hashing",
+    "address": "0x399aA07a970ea3711d002566cafDBe021f9DD0E8",
+    "Twitter": "https://twitter.com/KeccakTeam",
+    "keyevent": 40,
+    "handle": "@KeccakTeam"
+  },
+  {
+    "name": "hardhat-deploy",
+    "address": "0xaddbc936ab952b6dc5c5fe090c55269a1174d173",
+    "Twitter": "https://twitter.com/wighawag",
+    "keyevent": 41,
+    "handle": "@wighawag"
+  },
+  {
+    "name": "Infinitism (ERC-4337)",
+    "address": "0x6A957e69A251D37CfD1F538F18EC1416FbdfA501",
+    "Twitter": "",
+    "keyevent": 42,
+    "handle": ""
+  },
+  {
+    "name": "Commons Stack",
+    "address": "0x8110d1D04ac316fdCACe8f24fD60C86b810AB15A",
+    "Twitter": "https://twitter.com/commonsstack",
+    "keyevent": 43,
+    "handle": "@commonsstack"
+  },
+  {
+    "name": "MerkleTreeJS",
+    "address": "0x358fdcCDE25e0aae7fBA01F088Da89b08aBF61DB",
+    "Twitter": "",
+    "keyevent": 44,
+    "handle": ""
+  },
+  {
+    "name": "Pocket Network",
+    "address": "0x5F1Feefc4BB7a414096cCF070BeEF94da8Ff88A6",
+    "Twitter": "https://twitter.com/POKTnetwork",
+    "keyevent": 45,
+    "handle": "@POKTnetwork"
+  },
+  {
+    "name": "Bankless Academy",
+    "address": "0xbFBceA2a72Bc2e62E967fA0c79458dD507708469",
+    "Twitter": "https://twitter.com/BanklessAcademy",
+    "keyevent": 46,
+    "handle": "@BanklessAcademy"
+  },
+  {
+    "name": "TE Academy",
+    "address": "0xA26d6AEB775a9528c012B748ACe66E3B0FD574cE",
+    "Twitter": "https://twitter.com/tokengineering",
+    "keyevent": 47,
+    "handle": "@tokengineering"
+  },
+  {
+    "name": "Michael Vander Meiden",
+    "address": "0x6EdA5aCafF7F5964E1EcC3FD61C62570C186cA0C",
+    "Twitter": "https://twitter.com/vander_meiden",
+    "keyevent": 48,
+    "handle": "@vander_meiden"
+  },
+  {
+    "name": "SEED LATAM (formerly DeFi LATAM)",
+    "address": "0x59De6dEBDbb63C374EEB418C80191831A69027d5",
+    "Twitter": "https://twitter.com/SEEDLatam",
+    "keyevent": 49,
+    "handle": "@SEEDLatam"
+  },
+  {
+    "name": "EIP-5164 / PoolTogether Inc",
+    "address": "0xfB0dADb835fAdE151aBf6780BeAfB12FC5B",
+    "Twitter": "",
+    "keyevent": 50,
+    "handle": ""
+  },
+  {
+    "name": "0xSplits",
+    "address": "0xe37B8373Fee7e13C2050eA386F3B6e4FE595a7c9",
+    "Twitter": "https://twitter.com/0xSplits",
+    "keyevent": 51,
+    "handle": "@0xSplits"
+  },
+  {
+    "name": "Guild",
+    "address": "0xa934b56be3eC0bDdfA8BFD1cb141E66d1bBd0F69",
+    "Twitter": "https://twitter.com/guildxyz",
+    "keyevent": 52,
+    "handle": "@guildxyz"
+  },
+  {
+    "name": "Chainlist",
+    "address": "0xAEcaeDc21C3ea0D84C596C126E2FD2e51E54D274",
+    "Twitter": "",
+    "keyevent": 53,
+    "handle": ""
+  },
+  {
+    "name": "Hyperledger Besu",
+    "address": "0xe8c53bD396Ece2283aACA0010E7a69395560e3F1",
+    "Twitter": "https://twitter.com/HyperledgerBesu",
+    "keyevent": 54,
+    "handle": "@HyperledgerBesu"
+  },
+  {
+    "name": "🐍 snekmate",
+    "address": "0x07bF3CDA34aA78d92949bbDce31520714AB5b228",
+    "Twitter": "https://twitter.com/pcaversaccio",
+    "keyevent": 55,
+    "handle": "@pcaversaccio"
+  },
+  {
+    "name": "Frame",
+    "address": "0x7c929EfA9a8A2A1524BA90aBc2B70801413fFD4c",
+    "Twitter": "https://twitter.com/0xFrame",
+    "keyevent": 56,
+    "handle": "@0xFrame"
+  },
+  {
+    "name": "Optimism en Español",
+    "address": "0xEfc42814bebfCF02e56856988daf7D80F2b7fbb7",
+    "Twitter": "https://twitter.com/OptimismESP",
+    "keyevent": 57,
+    "handle": "@OptimismESP"
+  },
+  {
+    "name": "IC3",
+    "address": "0xe89bc14DD5C83f1bd7Bd978aF035d74Fc300ca09",
+    "Twitter": "https://twitter.com/initc3org",
+    "keyevent": 58,
+    "handle": "@initc3org"
+  },
+  {
+    "name": "Solady",
+    "address": "0x1F5D295778796a8b9f29600A585Ab73D452AcB1c",
+    "Twitter": "https://twitter.com/optimizoor",
+    "keyevent": 59,
+    "handle": "@optimizoor"
+  },
+  {
+    "name": "TypeChain",
+    "address": "0x4d2F0Efdb2AD1d709d8522E7b5aa9f5181563617",
+    "Twitter": "https://twitter.com/dethcrypto",
+    "keyevent": 60,
+    "handle": "@dethcrypto"
+  },
+  {
+    "name": "Attestation Station Interface",
+    "address": "0x5EfF4B8c042AA6003cBDA6E32C4aA23657d3b6AF",
+    "Twitter": "https://twitter.com/soyboy_vegan",
+    "keyevent": 61,
+    "handle": "@soyboy_vegan"
+  },
+  {
+    "name": "Prettier Solidity",
+    "address": "0xFc756d8632A19CEbd76560CE0A6967279E32131b",
+    "Twitter": "https://twitter.com/prettiersol",
+    "keyevent": 62,
+    "handle": "@prettiersol"
+  },
+  {
+    "name": "blst by Supranational",
+    "address": "0x0a6CD04Ca9Ce730c709276C6868D9F2C4D9Ef1D6",
+    "Twitter": "https://twitter.com/_Supranational",
+    "keyevent": 63,
+    "handle": "@_Supranational"
+  },
+  {
+    "name": "Blobscan",
+    "address": "0xd228A0054246577d9c6F978d11Ab9405AE566c5D",
+    "Twitter": "https://twitter.com/blossom_labs",
+    "keyevent": 64,
+    "handle": "@blossom_labs"
+  },
+  {
+    "name": "Akula",
+    "address": "0x9d6d3b09F8AC8615805bd82e53B80D956F451CFa",
+    "Twitter": "https://twitter.com/AkulaApp",
+    "keyevent": 65,
+    "handle": "@AkulaApp"
+  },
+  {
+    "name": "CANDIDE Wallet",
+    "address": "0xf508311867EFdC50cf36B06EC95E0EEdb22",
+    "Twitter": "https://twitter.com/candidewallet",
+    "keyevent": 66,
+    "handle": "@candidewallet"
+  },
+  {
+    "name": "Umbra",
+    "address": "0x5C04E7808455ee0e22c2773328C151d0DD79dC62",
+    "Twitter": "https://twitter.com/UmbraCash",
+    "keyevent": 67,
+    "handle": "@UmbraCash"
+  },
+  {
+    "name": "Boardroom",
+    "address": "0xF6a4475a006b28b9996c92bEE27DEEDc38032cDe",
+    "Twitter": "https://twitter.com/boardroom_info",
+    "keyevent": 68,
+    "handle": "@boardroom_info"
+  },
+  {
+    "name": "diligit",
+    "address": "0x25a2dF1d1310da75e8BC115cc797673E777B7e27",
+    "Twitter": "https://twitter.com/diligitSP",
+    "keyevent": 69,
+    "handle": "@diligitSP"
+  },
+  {
+    "name": "hildobby's Dune dashboards",
+    "address": "0x09a5943a6d10919571eE2C9F63380aEA747ECA97",
+    "Twitter": "https://twitter.com/hildobby_",
+    "keyevent": 70,
+    "handle": "@hildobby_"
+  },
+  {
+    "name": "EthereumETL",
+    "address": "0x9fd0c742d81b6f08817f3ef11d09cb4a9f54ee5f",
+    "Twitter": "https://twitter.com/EthereumETL",
+    "keyevent": 71,
+    "handle": "@EthereumETL"
+  },
+  {
+    "name": "Sourcify",
+    "address": "0x1c817f030F430107ed8C60Bb8187cbf8e17F4ee9",
+    "Twitter": "https://twitter.com/SourcifyEth",
+    "keyevent": 72,
+    "handle": "@SourcifyEth"
+  },
+  {
+    "name": "ChugSplash",
+    "address": "0x6D308C0535FA135516a2A0c493001e62088B065D",
+    "Twitter": "https://twitter.com/ChugSplash_io",
+    "keyevent": 73,
+    "handle": "@ChugSplash_io"
+  },
+  {
+    "name": "Zapper",
+    "address": "0x7f9d4208d404d86396f856c4f3db0195bb677f17",
+    "Twitter": "https://twitter.com/zapper_fi",
+    "keyevent": 74,
+    "handle": "@zapper_fi"
+  },
+  {
+    "name": "Jrocki - YouTube & Podcast",
+    "address": "0x91d667cfcAae0aea9A0ed1D2C0e8A157bfb61116",
+    "Twitter": "https://twitter.com/Reformed_Normie",
+    "keyevent": 75,
+    "handle": "@Reformed_Normie"
+  },
+  {
+    "name": "BanklessDAO Projects",
+    "address": "0x918ceb96deeaba2db06b18d7fc8f52fe0a206040",
+    "Twitter": "https://twitter.com/banklessDAO",
+    "keyevent": 76,
+    "handle": "@banklessDAO"
+  },
+  {
+    "name": "ITU Blockchain",
+    "address": "0xBEC643BD5b7F5e9190617CA4187ef0455950C51C",
+    "Twitter": "https://twitter.com/ITUblockchain",
+    "keyevent": 77,
+    "handle": "@ITUblockchain"
+  },
+  {
+    "name": "Token Terminal",
+    "address": "0xeB67e286faf667A047e435EC90107122b0bC2C01",
+    "Twitter": "https://twitter.com/tokenterminal",
+    "keyevent": 78,
+    "handle": "@tokenterminal"
+  },
+  {
+    "name": "Layer 2 Landscape",
+    "address": "0x7a48A728d9Fd2d5a55c545c4378E5bA909349E90",
+    "Twitter": "https://twitter.com/bitsplaining",
+    "keyevent": 79,
+    "handle": "@bitsplaining"
+  },
+  {
+    "name": "H.E.R. DAO LATAM",
+    "address": "0x2948A68525287fB8252032a300D50d3fd63d9C22",
+    "Twitter": "https://twitter.com/herdaolatam",
+    "keyevent": 80,
+    "handle": "@herdaolatam"
+  },
+  {
+    "name": "Optimism DAppNode Package",
+    "address": "0x523d007855B3543797E0d3D462CB44B601274819",
+    "Twitter": "https://twitter.com/DanieleSalatti",
+    "keyevent": 81,
+    "handle": "@DanieleSalatti"
+  },
+  {
+    "name": "Atlantis World",
+    "address": "0x036C545Ae4f68059b4C83f7E3814429d4c73c089",
+    "Twitter": "https://twitter.com/atlantis0x",
+    "keyevent": 82,
+    "handle": "@atlantis0x"
+  },
+  {
+    "name": "delegation.tools",
+    "address": "0xA47669cBc53985333423e4d3D00188f4049fB695",
+    "Twitter": "https://twitter.com/DanieleSalatti",
+    "keyevent": 83,
+    "handle": "@DanieleSalatti"
+  },
+  {
+    "name": "Solhint",
+    "address": "0x5fC34D03cFdf145Db5f3c5B5558e39a4164AAa30",
+    "Twitter": "https://twitter.com/protofire",
+    "keyevent": 84,
+    "handle": "@protofire"
+  },
+  {
+    "name": "Layer 2 Weekly Roundup",
+    "address": "0xd63f3C8898673717f26C011597e0a613CAb6D982",
+    "Twitter": "https://twitter.com/daddysether",
+    "keyevent": 85,
+    "handle": "@daddysether"
+  },
+  {
+    "name": "Dapp-Learning",
+    "address": "0x1F7b953113f4dFcBF56a1688529CC812865840e1",
+    "Twitter": "https://twitter.com/Dapp_Learning",
+    "keyevent": 86,
+    "handle": "@Dapp_Learning"
+  },
+  {
+    "name": "NiceNode",
+    "address": "0x9cce47E9cF12C6147c9844adBB81fE85880c4df4",
+    "Twitter": "https://twitter.com/NiceNodeApp",
+    "keyevent": 87,
+    "handle": "@NiceNodeApp"
+  },
+  {
+    "name": "Women Biz - Optimism education",
+    "address": "0xD280C617492b02607a72c1099082\n 096C19548f0f",
+    "Twitter": "https://twitter.com/HiWomenbiz",
+    "keyevent": 88,
+    "handle": "@HiWomenbiz"
+  },
+  {
+    "name": "thesleeper.eth Thai OP contents",
+    "address": "0x00409fC839a2Ec2e6d12305423d37Cd011279C09",
+    "Twitter": "https://twitter.com/aka_steppenwolf",
+    "keyevent": 89,
+    "handle": "@aka_steppenwolf"
+  },
+  {
+    "name": "Node Guardians",
+    "address": "0x6ef87E0Aaadb2c3d07fD98a098Af5FaD0aD45811",
+    "Twitter": "https://twitter.com/nodeguardians",
+    "keyevent": 90,
+    "handle": "@nodeguardians"
+  },
+  {
+    "name": "Web3j",
+    "address": "0xe8a17e2f1bd4bFcBfBecb8a90be08780949a0cac",
+    "Twitter": "https://twitter.com/web3labs",
+    "keyevent": 91,
+    "handle": "@web3labs"
+  },
+  {
+    "name": "WTF Academy",
+    "address": "0x25df6DA2f4e5C178DdFF45038378C0b08E0Bce54",
+    "Twitter": "https://twitter.com/WTFAcademy_",
+    "keyevent": 92,
+    "handle": "@WTFAcademy_"
+  },
+  {
+    "name": "The Optimistic Series",
+    "address": "0x03143ee031aa7bd7b6846750d066a27f18d39edd",
+    "Twitter": "https://twitter.com/Subli_Defi",
+    "keyevent": 93,
+    "handle": "@Subli_Defi"
+  },
+  {
+    "name": "Messari Protocol Services",
+    "address": "0xAe12D368BB4FF18ee633CAcf4dcf497885466f32",
+    "Twitter": "https://twitter.com/MessariCrypto",
+    "keyevent": 94,
+    "handle": "@MessariCrypto"
+  },
+  {
+    "name": "Flexible Voting",
+    "address": "0x5C04E7808455ee0e22c2773328C151d0DD79dC62",
+    "Twitter": "",
+    "keyevent": 95,
+    "handle": ""
+  },
+  {
+    "name": "JiffyScan",
+    "address": "0xdd347ad6aA6D26ae6840ed3574E6Ce4b0E002066",
+    "Twitter": "",
+    "keyevent": 96,
+    "handle": ""
+  },
+  {
+    "name": "Multicall3",
+    "address": "0x60A5dcB2fC804874883b797f37CbF1b0582ac2dD",
+    "Twitter": "https://twitter.com/msolomon44",
+    "keyevent": 97,
+    "handle": "@msolomon44"
+  },
+  {
+    "name": "⚡️TurboETH - Web3 Build System",
+    "address": "0x4B5509687117aE7308188753ECbAEd61B3B1233c",
+    "Twitter": "https://twitter.com/KamesGeraghty",
+    "keyevent": 98,
+    "handle": "@KamesGeraghty"
+  },
+  {
+    "name": "Clique",
+    "address": "0x003eB864477C8858BEC0916E23785AcA46f6ba34",
+    "Twitter": "https://twitter.com/Clique2046",
+    "keyevent": 99,
+    "handle": "@Clique2046"
+  },
+  {
+    "name": "Gelato",
+    "address": "0x01ea687Be2937D4Bfd9e302b8dbD3be8d9bDb14e",
+    "Twitter": "https://twitter.com/gelatonetwork",
+    "keyevent": 100,
+    "handle": "@gelatonetwork"
+  },
+  {
+    "name": "Fire",
+    "address": "0x24ee055Ff80321cab8583a64a68Db12652dC60ea",
+    "Twitter": "https://twitter.com/_joinfire",
+    "keyevent": 101,
+    "handle": "@_joinfire"
+  },
+  {
+    "name": "ETHEREUM MÉXICO",
+    "address": "0x7674D60760918Ae89cA71F2ce1Af2b2E740E2c8E",
+    "Twitter": "https://twitter.com/ethereum_mexico",
+    "keyevent": 102,
+    "handle": "@ethereum_mexico"
+  },
+  {
+    "name": "Proof of Integrity",
+    "address": "0x75DeD588d2a4734D0a61B9953A3C4e6C6D00AbC4",
+    "Twitter": "https://twitter.com/proof_integrity",
+    "keyevent": 103,
+    "handle": "@proof_integrity"
+  },
+  {
+    "name": "Rollup Economics Dashboard",
+    "address": "0x701E37643DADa13DE79e66A74E7d6187FC48faD2",
+    "Twitter": "https://twitter.com/0xKofi",
+    "keyevent": 104,
+    "handle": "@0xKofi"
+  },
+  {
+    "name": "Optimism FM",
+    "address": "0x09c41efc1C7E2C2A11Bb153eF39AFFeaFf2CeDcD",
+    "Twitter": "https://twitter.com/jiananxz",
+    "keyevent": 105,
+    "handle": "@jiananxz"
+  },
+  {
+    "name": "Across Protocol",
+    "address": "0x787B66d5281D45126bf0e0f3C9aC682D1E119d6C",
+    "Twitter": "https://twitter.com/AcrossProtocol",
+    "keyevent": 106,
+    "handle": "@AcrossProtocol"
+  },
+  {
+    "name": "Optinames | ENS on Optimism",
+    "address": "0x1D7b8D3c6c896d7eB4f9118Ea377C359073d4083",
+    "Twitter": "https://twitter.com/optinames",
+    "keyevent": 107,
+    "handle": "@optinames"
+  },
+  {
+    "name": "Apetimism Launchpad",
+    "address": "0x16ac527d938c36Caec5A6b0665ef7b456C22f7D2",
+    "Twitter": "https://twitter.com/apetimism",
+    "keyevent": 108,
+    "handle": "@apetimism"
+  },
+  {
+    "name": "Smock",
+    "address": "0x4f2188dfD474E502Ea67D09bE3E58b761B6AEEB7",
+    "Twitter": "https://twitter.com/DeFi_Wonderland",
+    "keyevent": 109,
+    "handle": "@DeFi_Wonderland"
+  },
+  {
+    "name": "Filosofía Código",
+    "address": "0xb6F5414bAb8d5ad8F33E37591C02f7284E974FcB",
+    "Twitter": "https://twitter.com/FilosofiaCodigo",
+    "keyevent": 110,
+    "handle": "@FilosofiaCodigo"
+  },
+  {
+    "name": "OP Dashboards  by Springzhang",
+    "address": "0xdbE38D1d3631a04875d3FAd945D0dFcb2C20f91c",
+    "Twitter": "https://twitter.com/superamscom",
+    "keyevent": 111,
+    "handle": "@superamscom"
+  },
+  {
+    "name": "Crate-Crypto",
+    "address": "0x90B005a9C7B19E1E962178deA63c1becc409B90f",
+    "Twitter": "",
+    "keyevent": 112,
+    "handle": ""
+  },
+  {
+    "name": "WakeUp Labs",
+    "address": "0xab4f5A7fcd1Bb66C8c5f01bB77F6142759f46107",
+    "Twitter": "https://twitter.com/wakeuplabs",
+    "keyevent": 113,
+    "handle": "@wakeuplabs"
+  },
+  {
+    "name": "Cryptoversidad",
+    "address": "0x281BA4E9B7e28982d6CB53EE3836865f1453e12F",
+    "Twitter": "https://twitter.com/cryptoversidad",
+    "keyevent": 114,
+    "handle": "@cryptoversidad"
+  },
+  {
+    "name": "Forta",
+    "address": "0x516D34d147DDa218cbEC1EADA374ca2ceC1a6e93",
+    "Twitter": "https://twitter.com/FortaNetwork",
+    "keyevent": 115,
+    "handle": "@FortaNetwork"
+  },
+  {
+    "name": "Web3beach",
+    "address": "0xEFEdaf9c07E6eB56BB8F82f30018e4461B1c5F4c",
+    "Twitter": "https://twitter.com/web3beach",
+    "keyevent": 116,
+    "handle": "@web3beach"
+  },
+  {
+    "name": "GasHawk",
+    "address": "0x44F00C29a0b8514D017ac20fBDb0AA5078b860cE",
+    "Twitter": "https://twitter.com/gashawkio",
+    "keyevent": 117,
+    "handle": "@gashawkio"
+  },
+  {
+    "name": "Otterspace",
+    "address": "0x2696170bf5fD36320c3932fd9e85fe5b798385FE",
+    "Twitter": "https://twitter.com/otterspace_xyz",
+    "keyevent": 118,
+    "handle": "@otterspace_xyz"
+  },
+  {
+    "name": "dm3 protocol",
+    "address": "0x11Ee133A1408FE2d7c62296D7eB33F234b774503",
+    "Twitter": "https://twitter.com/dm3protocol",
+    "keyevent": 119,
+    "handle": "@dm3protocol"
+  },
+  {
+    "name": "donnoh",
+    "address": "0x33d66941465ac776c38096cb1bc496c673ae7390",
+    "Twitter": "https://twitter.com/donnoh_eth",
+    "keyevent": 120,
+    "handle": "@donnoh_eth"
+  },
+  {
+    "name": "Espacio Cripto",
+    "address": "0x1d4d44Bca3F094A64db1f5C2AAdc636B8e557772",
+    "Twitter": "https://twitter.com/EspacioCripto",
+    "keyevent": 121,
+    "handle": "@EspacioCripto"
+  },
+  {
+    "name": "Web3 Data Degens",
+    "address": "0x2Ae8c972fB2E6c00ddED8986E2dc672ED190DA06",
+    "Twitter": "https://twitter.com/andrewhong5297",
+    "keyevent": 122,
+    "handle": "@andrewhong5297"
+  },
+  {
+    "name": "Praise",
+    "address": "0x0B7246eF74Ca7b37Fdc3D15be4f0b49876622F95",
+    "Twitter": "https://twitter.com/givepraise",
+    "keyevent": 123,
+    "handle": "@givepraise"
+  },
+  {
+    "name": "RainbowKit Login for WordPress",
+    "address": "0x0F9Bd2a9E0D30f121c525DB5419A07b08Fce8440",
+    "Twitter": "https://twitter.com/davisshaver",
+    "keyevent": 124,
+    "handle": "@davisshaver"
+  },
+  {
+    "name": "Nested",
+    "address": "0xf944069B489F1ebfF4C3C6a6014d58cBEf7C7009",
+    "Twitter": "https://twitter.com/nestedfi",
+    "keyevent": 125,
+    "handle": "@nestedfi"
+  },
+  {
+    "name": "OptiChads",
+    "address": "0x10850762bAc0dc6660630c1EfFe188A7cbFDdc88",
+    "Twitter": "https://twitter.com/OptiChads",
+    "keyevent": 126,
+    "handle": "@OptiChads"
+  },
+  {
+    "name": "Ankr",
+    "address": "0x3a78741AC7f96724bf32Cd33de68D54438c1Ef9b",
+    "Twitter": "https://twitter.com/ankr",
+    "keyevent": 127,
+    "handle": "@ankr"
+  },
+  {
+    "name": "RareSkills",
+    "address": "0x4879DF2Ba195a69C178133F44E278c0f64797Ca5",
+    "Twitter": "https://twitter.com/RareSkills_io",
+    "keyevent": 128,
+    "handle": "@RareSkills_io"
+  },
+  {
+    "name": "LlamaFolio",
+    "address": "0x2cd0ac587Fc0E6FBcF8A47A449971649E7dab835",
+    "Twitter": "",
+    "keyevent": 129,
+    "handle": ""
+  },
+  {
+    "name": "Pairwise",
+    "address": "0xc8d65e1bd67f16522e3117b980e1c9d2caeb9dc3",
+    "Twitter": "https://twitter.com/Generalmagicio",
+    "keyevent": 130,
+    "handle": "@Generalmagicio"
+  },
+  {
+    "name": "Fractal Visions",
+    "address": "0xC4FC57Dedd2463314A3fD2DBadB86B4404C257e5",
+    "Twitter": "https://twitter.com/Fractal_Visions",
+    "keyevent": 131,
+    "handle": "@Fractal_Visions"
+  },
+  {
+    "name": "OP Medicine",
+    "address": "0x8dc640a257DE18857F8d24e1Ae2645F8bBa1E034",
+    "Twitter": "https://twitter.com/OP_medicine_DAO",
+    "keyevent": 132,
+    "handle": "@OP_medicine_DAO"
+  },
+  {
+    "name": "L2planet",
+    "address": "0x40170fA69481D9B197e226E63317B49dB3c2db02",
+    "Twitter": "https://twitter.com/layer2planet",
+    "keyevent": 133,
+    "handle": "@layer2planet"
+  },
+  {
+    "name": "Orbiter Finance",
+    "address": "0x10C7EEbf2fF90807CA24347cD9c7d4a42345D583",
+    "Twitter": "https://twitter.com/Orbiter_Finance",
+    "keyevent": 134,
+    "handle": "@Orbiter_Finance"
+  },
+  {
+    "name": "DeFi Library",
+    "address": "0x4e3D9399C28c724293dd545225Ec843Ac4c9e953",
+    "Twitter": "https://twitter.com/LibraryDefi",
+    "keyevent": 135,
+    "handle": "@LibraryDefi"
+  },
+  {
+    "name": "Blocktrend (區塊勢)",
+    "address": "0x36F322fC85B24aB13263CFE9217B28f8E2b38381",
+    "Twitter": "https://twitter.com/astro_hsu",
+    "keyevent": 136,
+    "handle": "@astro_hsu"
+  },
+  {
+    "name": "Rust-cannon-template",
+    "address": "0xc0017405E287476443Ab1B342B86f2ea92Ef9F73",
+    "Twitter": "https://twitter.com/WillemOlding1",
+    "keyevent": 137,
+    "handle": "@WillemOlding1"
+  },
+  {
+    "name": "Optimism Prices Contracts",
+    "address": "0x82D54397B88CE80Ea2Df9aD049213ACb47dc2523",
+    "Twitter": "",
+    "keyevent": 138,
+    "handle": ""
+  },
+  {
+    "name": "Chaineye",
+    "address": "0xE6D7b9Fb31B93E542f57c7B6bfa0a5a48EfC9D0f",
+    "Twitter": "https://twitter.com/BiteyeCN",
+    "keyevent": 139,
+    "handle": "@BiteyeCN"
+  },
+  {
+    "name": "jordanmmck",
+    "address": "0x29FF795B015652EdFB9883bB83B3E9bE3c207e62",
+    "Twitter": "https://twitter.com/jordanmmck",
+    "keyevent": 140,
+    "handle": "@jordanmmck"
+  },
+  {
+    "name": "Scry",
+    "address": "0x90B005a9C7B19E1E962178deA63c1becc409B90f",
+    "Twitter": "https://twitter.com/ScryProtocol",
+    "keyevent": 141,
+    "handle": "@ScryProtocol"
+  },
+  {
+    "name": "OptimismArabia",
+    "address": "0x6e4E55A49a8C8938BD8D8668E18DE95962740Fe1",
+    "Twitter": "https://twitter.com/cryptoblarabi",
+    "keyevent": 142,
+    "handle": "@cryptoblarabi"
+  },
+  {
+    "name": "Esteroids",
+    "address": "0xD8228a0bE7322834101B1a5DA62CfBa28BD810C8",
+    "Twitter": "https://twitter.com/e_steroids",
+    "keyevent": 143,
+    "handle": "@e_steroids"
+  },
+  {
+    "name": "Basic course in crypto literacy",
+    "address": "0xC9401fB51AC04583c6C0a740Ba4ee51Dd73AA9C4",
+    "Twitter": "https://twitter.com/bccourse",
+    "keyevent": 144,
+    "handle": "@bccourse"
+  },
+  {
+    "name": "cp0x",
+    "address": "0x74630370197b4c4795bFEeF6645ee14F8cf8997D",
+    "Twitter": "https://twitter.com/cp0xdotcom",
+    "keyevent": 145,
+    "handle": "@cp0xdotcom"
+  },
+  {
+    "name": "Bored Town",
+    "address": "0x9D63038e7f74bc089eb38e61Be8Da937918900D6",
+    "Twitter": "https://twitter.com/BoredTownNFT",
+    "keyevent": 146,
+    "handle": "@BoredTownNFT"
+  },
+  {
+    "name": "Quark ID",
+    "address": "0x98c72aFaA2797cb194433de46Fe9E3ceF39F7a53",
+    "Twitter": "https://twitter.com/Quark_ID",
+    "keyevent": 147,
+    "handle": "@Quark_ID"
+  },
+  {
+    "name": "MarcoV (Optimism Dashboards)",
+    "address": "0x283266045Ab2aB0793a62CADC21D55f685636Ae0",
+    "Twitter": "https://twitter.com/marcov_91",
+    "keyevent": 148,
+    "handle": "@marcov_91"
+  },
+  {
+    "name": "Revolte",
+    "address": "0x1a2b8bd408413179524e3e61FfA1378b7b7688D5",
+    "Twitter": "https://twitter.com/IrruptionLab",
+    "keyevent": 149,
+    "handle": "@IrruptionLab"
+  },
+  {
+    "name": "Big Sybil'or",
+    "address": "0x8B93910594e2a09c30D7e97883f6d35d8772801d",
+    "Twitter": "https://twitter.com/kavourias",
+    "keyevent": 150,
+    "handle": "@kavourias"
+  },
+  {
+    "name": "Odos",
+    "address": "0x9Ff6e05e9c5f4E2f5ed8FD771C98E0c07E933b85",
+    "Twitter": "https://twitter.com/odosprotocol",
+    "keyevent": 151,
+    "handle": "@odosprotocol"
+  },
+  {
+    "name": "RockX",
+    "address": "0x9275cC6de34471f4a669e9dc0F90994Ad6702DA9",
+    "Twitter": "https://twitter.com/rockx_official",
+    "keyevent": 152,
+    "handle": "@rockx_official"
+  },
+  {
+    "name": "Infinity Wallet & Web3 Browser",
+    "address": "0xb7D6937F3aa9E09817C045b7d5b5Fb5064370671",
+    "Twitter": "https://twitter.com/InfinityWallet",
+    "keyevent": 153,
+    "handle": "@InfinityWallet"
+  },
+  {
+    "name": "DexKit",
+    "address": "0x5265Bde27F57E738bE6c1F6AB3544e82cdc92a8f",
+    "Twitter": "https://twitter.com/dexkit",
+    "keyevent": 154,
+    "handle": "@dexkit"
+  },
+  {
+    "name": "BwareLabs",
+    "address": "0xb8950c47E8B9e539601cB47A167DE8bf4Cb1289E",
+    "Twitter": "https://twitter.com/BwareLabs",
+    "keyevent": 155,
+    "handle": "@BwareLabs"
+  },
+  {
+    "name": "OAYC",
+    "address": "0x81B7E9d8409B857D70aD14073E785c486945CaF4",
+    "Twitter": "https://twitter.com/OptiApeYC",
+    "keyevent": 156,
+    "handle": "@OptiApeYC"
+  },
+  {
+    "name": "OptimismGuru",
+    "address": "0x7EfD363be2dfbbEc8d49C90921EC73A569106831",
+    "Twitter": "https://twitter.com/GuruOptimism",
+    "keyevent": 157,
+    "handle": "@GuruOptimism"
+  },
+  {
+    "name": "Perpetuals Dune Abstraction",
+    "address": "0x08290908a251119a1C75bb9C36A7A41e9BF2f1E3",
+    "Twitter": "https://twitter.com/robplust",
+    "keyevent": 158,
+    "handle": "@robplust"
+  },
+  {
+    "name": "raise_exception (rotate.eth)",
+    "address": "0x400aBc3DAE98Ec5aEEF2681b40D4CEd0A5aff934",
+    "Twitter": "https://twitter.com/raise_exception",
+    "keyevent": 159,
+    "handle": "@raise_exception"
+  },
+  {
+    "name": "Eneagon by zenbit.eth",
+    "address": "0xeCB4C1245665e8A1F43826355aaB0Dd6bF336e05",
+    "Twitter": "https://twitter.com/zenbitMX",
+    "keyevent": 160,
+    "handle": "@zenbitMX"
+  },
+  {
+    "name": "GiveStation",
+    "address": "0x98293398e9Ce2101044EEF5f7Cc15DeB84422c1e",
+    "Twitter": "https://twitter.com/GiveStation",
+    "keyevent": 161,
+    "handle": "@GiveStation"
+  },
+  {
+    "name": "Gov",
+    "address": "0x83E2403A8b94AF988B4F4Ae9869577783b8CD216",
+    "Twitter": "https://twitter.com/w3hc8",
+    "keyevent": 162,
+    "handle": "@w3hc8"
+  },
+  {
+    "name": "ERC-5560: Redeemable NFTs",
+    "address": "0x5874D5D530D1f969FD962579c445A0f3A8682D48",
+    "Twitter": "https://twitter.com/ATO_nft",
+    "keyevent": 163,
+    "handle": "@ATO_nft"
+  },
+  {
+    "name": "Rigoblock",
+    "address": "0x080f08076e8EAdC66006C3CbFEd28a34918A1fA6",
+    "Twitter": "https://twitter.com/RigoBlock",
+    "keyevent": 164,
+    "handle": "@RigoBlock"
+  },
+  {
+    "name": "Thumbs Up Finance",
+    "address": "0x4d85e4F760fb58E380f02657AE5Aafb8bd010601",
+    "Twitter": "https://twitter.com/thumbsupfinance",
+    "keyevent": 165,
+    "handle": "@thumbsupfinance"
+  }
+]

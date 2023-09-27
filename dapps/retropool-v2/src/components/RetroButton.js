@@ -7,7 +7,6 @@ import {
   prizePoolAddress,
   ticketContractAddress,
   TWABDelegatorContractAddress,
-  optiRetroPGFAddress,
 } from "../helpers/consts";
 import ERC20Abi from "../abis/ERC20Abi";
 import prizePoolAbi from "../abis/prizePoolAbi";
@@ -15,10 +14,7 @@ import ticketContractAbi from "../abis/ticketContractAbi";
 import TWABDelegatorContractAbi from "../abis/TWABDelegatorContractAbi";
 import { useConnectWallet } from "@web3-onboard/react";
 
-export default function RetroButton({
-  submittedValue,
-  updateTxReceipt,
-}) {
+export default function RetroButton({ submittedValue, updateTxReceipt }) {
   const [ethersProvider, setProvider] = useState();
   const [{ wallet }] = useConnectWallet();
 
@@ -35,6 +31,7 @@ export default function RetroButton({
     const chainId = 10;
     const depositAmount = submittedValue.amount * 1000000;
     const delegationPeriodInDays = submittedValue.days;
+    const receipientAddress = submittedValue.receipient.address;
 
     if (!ethersProvider) {
       return;
@@ -108,7 +105,7 @@ export default function RetroButton({
       const callDataCreateDelegationTickets =
         await TWABDelegatorContract.interface.encodeFunctionData(
           "createDelegation",
-          [address, slotIndex, optiRetroPGFAddress, lockDuration]
+          [address, slotIndex, receipientAddress, lockDuration]
         );
 
       const callDataFundDelegation =
@@ -178,12 +175,18 @@ export default function RetroButton({
           if (receipt) {
             const response = JSON.parse(receipt);
             if (response.calls[0].status === "CONFIRMED") {
-              updateTxReceipt({ status: response.calls[0].status, hash: userOpHash });
+              updateTxReceipt({
+                status: response.calls[0].status,
+                hash: userOpHash,
+              });
               break;
             } else if (response.calls[0].status === "PENDING") {
               await new Promise((resolve) => setTimeout(resolve, 5000));
             } else if (response.calls[0].status === "FAILED") {
-              updateTxReceipt({ status: response.calls[0].status, hash: userOpHash });
+              updateTxReceipt({
+                status: response.calls[0].status,
+                hash: userOpHash,
+              });
               break;
             }
           } else {
